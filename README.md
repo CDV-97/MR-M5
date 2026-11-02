@@ -1,2 +1,2 @@
 # MR-M5
-Clasificación de residuos en 12 categorías mediante redes neuronales convolucionales con TensorFlow y Keras.
+Clasificación de modelos de tenis a partir de imágenes mediante redes neuronales convolucionales con TensorFlow y Keras, utilizando el dataset Popular Sneakers Classification.
