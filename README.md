@@ -12,4 +12,4 @@ Para reproducir el entrenamiento, abre `brain_tumor_classification.ipynb` en Goo
 
 La CNN con aumento de datos obtuvo el mayor F1 macro de validación (0.9628) entre las configuraciones evaluadas. En las 1,579 imágenes de prueba obtuvo 85.56 % de accuracy y 0.8533 de F1 macro.
 
-El modelo clasificó como `notumor` 170 de las 1,179 imágenes de prueba etiquetadas con tumor (14.42 %). La separación se realizó por imagen debido a la falta de identificadores de paciente. La aplicación tiene un propósito académico.
+El modelo clasificó como `notumor` 170 de las 1,179 imágenes de prueba etiquetadas con tumor (14.42 %). La separación se realizó por imagen debido a la falta de identificadores de paciente.
