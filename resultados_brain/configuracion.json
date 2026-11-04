@@ -1,0 +1,26 @@
+{
+  "modelo_seleccionado": "CNN con aumento de datos",
+  "image_size": [
+    128,
+    128
+  ],
+  "channels": 3,
+  "resize_method": "bilinear",
+  "preserve_aspect_ratio": true,
+  "padding": "zeros",
+  "input_pixel_range": [
+    0,
+    255
+  ],
+  "normalization": "Rescaling dentro del modelo",
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "seed": 42,
+  "tensorflow_version": "2.21.0",
+  "accuracy_prueba": 0.8556048131728943,
+  "f1_macro_prueba": 0.8532917609915033
+}
