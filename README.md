@@ -4,7 +4,7 @@ Clasificador de imágenes desarrollado con TensorFlow y Keras para cuatro catego
 
 ## Datos y preparación
 
-El notebook descarga la versión 2 de [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/versions/2). Se eliminaron duplicados exactos y se conservaron las imágenes compartidas entre las particiones originales únicamente en prueba. Tras la limpieza, quedaron 4,239 imágenes para entrenamiento, 1,060 para validación y 1,579 para prueba.
+El notebook descarga la versión 2 de [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/versions/2). Se eliminaron duplicados exactos y se conservaron únicamente en prueba las imágenes que aparecían tanto en entrenamiento como en prueba. Tras la limpieza, quedaron 4,239 imágenes para entrenamiento, 1,060 para validación y 1,579 para prueba.
 
 ## Resultados
 
@@ -19,10 +19,10 @@ Se seleccionó la CNN con aumento de datos por su mayor F1 macro de validación.
 
 ## Generar predicciones en Colab
 
-1. Abre [brain_tumor_classification.ipynb](brain_tumor_classification.ipynb) en Google Colab.
-2. Descarga [modelo_final.keras](https://github.com/CDV-97/MR-M5/releases/download/v1.0.0/modelo_final.keras) desde el Release `v1.0.0`.
-3. Crea la carpeta `resultados_brain` en el entorno de Colab y sube el modelo junto con [etiquetas.json](resultados_brain/etiquetas.json) y [configuracion.json](resultados_brain/configuracion.json).
-4. Ejecuta la siguiente celda antes de la sección 6 y luego ejecuta las celdas de esa sección para cargar una imagen y ver su predicción.
+1. Abrir [brain_tumor_classification.ipynb](brain_tumor_classification.ipynb) en Google Colab.
+2. Descargar [modelo_final.keras](https://github.com/CDV-97/MR-M5/releases/download/v1.0.0/modelo_final.keras) desde el Release `v1.0.0`.
+3. Crear la carpeta `resultados_brain` en el entorno de Colab y subir el modelo junto con [etiquetas.json](resultados_brain/etiquetas.json) y [configuracion.json](resultados_brain/configuracion.json).
+4. Ejecutar la siguiente celda antes de la sección 6. Luego, ejecutar las celdas de esa sección para cargar una imagen y obtener su predicción.
 
 ```python
 from pathlib import Path
@@ -40,4 +40,4 @@ OUTPUT_DIR = Path("/content/resultados_brain")
 
 ## Reproducir el entrenamiento
 
-Abre el notebook en Google Colab y ejecuta las celdas en orden. El notebook incluye la descarga y preparación del dataset, el entrenamiento de los modelos, la comparación en validación y la evaluación en prueba.
+Abrir el notebook en Google Colab y ejecutar las celdas en orden. El notebook incluye la descarga y preparación del dataset, el entrenamiento de los modelos, la comparación en validación y la evaluación en prueba.
