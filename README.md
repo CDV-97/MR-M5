@@ -2,7 +2,7 @@
 
 Clasificador de imágenes desarrollado con TensorFlow y Keras. La red neuronal convolucional distingue cuatro categorías: glioma, meningioma, tumor hipofisario (`pituitary`) y sin tumor (`notumor`).
 
-**Autor:** Carlos Manuel Delgado Vázquez
+**Autor:** Carlos Manuel Delgado Vázquez A01747037
 
 ## Archivos de la entrega
 
