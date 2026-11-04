@@ -1,0 +1,2 @@
+modelo,accuracy_prueba,f1_macro_prueba,imagenes_prueba
+CNN con aumento de datos,0.8556048131728943,0.8532917609915033,1579
